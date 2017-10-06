@@ -1,0 +1,70 @@
+<style>.conf_reg_button, .preconf_reg_button { margin: 10px; background-color: #4CAF50; /* Green */ border: 2px solid #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; transition-duration: 0.3s;} .conf_reg_button:hover , .preconf_reg_button:hover {background-color: white; border: 2px solid #4CAF50; color: #4CAF50;} .no_submit {background-color: white; border: 2px solid #4CAF50; color: #4CAF50; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; transition-duration: 0.3s;} .sub_reg_button { background-color: #4CAF50; /* Green */ border: 2px solid white; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; transition-duration: 0.3s;} .sub_reg_button:hover {background-color: white; border: 2px solid #4CAF50; color: #4CAF50;}</style>
+
+<div id="2017conf_conduct" style="line-height: 18px; font-size: 12px;">
+  <p style="font-size:16px; text-align: center;"><strong>ALAO Events Agreements</strong><br>
+  <em>Approved by the ALAO Board, 2/24/17</em></p><br>
+  <br>
+
+  <p style="font-size:16px;"><strong>CONDUCT STATEMENT</strong></p><br>
+
+  <p>The Academic Library Association of Ohio holds professional conferences, workshops and meetings to enable its members to receive continuing education, build professional networks and discover new products and services for professional use.</p><br>
+
+  <p>To provide all participants – members and other attendees, speakers, exhibitors, staff and volunteers – the opportunity to benefit from the event, the Academic Library Association of Ohio is committed to providing a harassment-free environment for everyone, regardless of gender, sexual orientation, gender identity, gender expression, disability, physical appearance, ethnicity, religion or other group identity.</p><br>
+
+  <p>If at any point during the event you feel uncomfortable or harassed, or if you witness any violations of these policies, please reach out to a member of the planning committee as designated by name badge. You can also email <a href="mailto:program@alaoweb.org">program@alaoweb.org</a> for less urgent situations or questions.</p><br>
+
+  <p style="font-size:16px;"><strong>ACCESSIBILITY STATEMENT</strong></p><br>
+
+  <p>The Academic Library Association of Ohio works to make sure our events are accessible, inclusive and welcoming to all. In order to give us time to make appropriate arrangements, please make all accessibility requests to the event organizers at <a href="mailto:program@alaoweb.org">program@alaoweb.org</a> before October 20, 2017.</p><br>
+</div><br>
+
+<div style="border-radius: 5px; margin-bottom:20px; padding: 10px;">
+  <table width="99%" watable="1" class="contStyleExcSimpleTable">
+    <tbody>
+      <tr>
+        <td style="width:55%; font-size: 16px; margin-top: 15px;"><input type="checkbox" onchange="comm_agreeToggle()" id="comm_agree"><label style="padding:5px;">I have read and I accept the ALAO Events Agreements.</label></td>
+
+        <td></td>
+
+        <td style="background-color:#eeeeee;">
+          <p align="center"><button id="ok_conf_submit" class="conf_reg_button no_submit" disabled="" type="button" onclick="window.open('https://www.alaoweb.org/event-2450634');">&nbsp;&nbsp;&nbsp;Conference Registration&nbsp;&nbsp;&nbsp;&nbsp;</button></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+
+        <td></td>
+
+        <td style="background-color:#eeeeee;">
+          <p align="center"><button id="ok_pre_submit" class="preconf_reg_button no_submit" disabled="" type="button" onclick="window.open('https://www.alaoweb.org/event-2581399');">Pre-Conference Registration</button></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="ALAO2017_credits" style="line-height: 18px; font-size: 12px;">
+  <p>The Conduct Statement is adapted from the <a href="http://2017.alaannual.org/statement-appropriate-conduct">American Library Association’s Statement of Appropriate Conduct</a>. The Accessibility Statement is adapted from the <a href="http://conference.acrl.org/accessibility/">Association of College &amp; Research Libraries conference website on accessibility</a>.</p>
+</div>
+<script type="text/javascript">
+function comm_agreeToggle() {
+	var x = document.getElementById("comm_agree").checked;
+	if (x == true) {
+		document.getElementById("ok_conf_submit").disabled = false;
+		document.getElementById("ok_conf_submit").classList.remove("no_submit");
+		document.getElementById("ok_conf_submit").classList.add("sub_reg_button");
+		document.getElementById("ok_pre_submit").disabled = false;
+		document.getElementById("ok_pre_submit").classList.remove("no_submit");
+		document.getElementById("ok_pre_submit").classList.add("sub_reg_button");
+		}
+	else {
+		document.getElementById("ok_conf_submit").disabled = true;
+		document.getElementById("ok_conf_submit").classList.remove("sub_reg_button");
+		document.getElementById("ok_conf_submit").classList.add("no_submit");
+		document.getElementById("ok_pre_submit").disabled = true; 
+		document.getElementById("ok_pre_submit").classList.remove("sub_reg_button");
+		document.getElementById("ok_pre_submit").classList.add("no_submit");
+		}
+} 
+</script>
